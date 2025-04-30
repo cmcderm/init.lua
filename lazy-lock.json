@@ -9,10 +9,11 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },
   "cmp-path": { "branch": "main", "commit": "c6635aae33a50d6010bf1aa756ac2398a2d54c32" },
   "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },
+  "cockpit": { "branch": "master", "commit": "2c9629041c9724fd208abb73c6d83cb7a09ff03c" },
   "conform.nvim": { "branch": "master", "commit": "372fc521f8421b7830ea6db4d6ea3bae1c77548c" },
   "fidget.nvim": { "branch": "main", "commit": "d9ba6b7bfe29b3119a610892af67602641da778e" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
-  "gruvbox": { "branch": "main", "commit": "8d79de155785f9eaf0031bba92d0289318208fc9" },
+  "gruvbox": { "branch": "main", "commit": "046e162b4b7998d3eb2cdb7f8d6811b7d8ceb303" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
   "hererocks": { "branch": "master", "commit": "c9c5444dea1e07e005484014a8231aa667be30b6" },
   "jai.vim": { "branch": "master", "commit": "72c09c5f803b8ab2e708a3ad2b7c3704e2b4b3d8" },
@@ -41,6 +42,7 @@
   "undotree": { "branch": "master", "commit": "b951b87b46c34356d44aa71886aecf9dd7f5788a" },
   "vim-be-good": { "branch": "master", "commit": "0ae3de14eb8efc6effe7704b5e46495e91931cc5" },
   "vim-fugitive": { "branch": "master", "commit": "4a745ea72fa93bb15dd077109afbb3d1809383f2" },
+  "vim-guys": { "branch": "master", "commit": "8755164fad8b82407687d64614d94e5843969bc8" },
   "ws.nvim": { "branch": "main", "commit": "65d65d5972a5d61977fc7ef86201a946215fea64" },
   "zen-mode.nvim": { "branch": "main", "commit": "863f150ca321b3dd8aa1a2b69b5f411a220e144f" }
 }
