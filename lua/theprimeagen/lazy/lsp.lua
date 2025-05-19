@@ -45,6 +45,8 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "gopls",
+                "clangd",
+                "omnisharp"
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -100,10 +102,10 @@ return {
                 end,
             },
             mapping = cmp.mapping.preset.insert({
-                ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+                ['<S-Tab>'] = cmp.mapping.select_prev_item(cmp_select),
                 ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-                ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-                ["<C-Space>"] = cmp.mapping.complete(),
+                ['<CR>'] = cmp.mapping.confirm({ select = true }),
+                -- ['<Tab>'] = cmp.mapping.complete(),
             }),
             sources = cmp.config.sources({
                 { name = "copilot", group_index = 2 },

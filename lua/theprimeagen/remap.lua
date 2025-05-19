@@ -49,6 +49,15 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- Set executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+vim.api.nvim_create_autocmd("filetype", {
+    pattern = "netrw",
+    callback = function()
+        local opts = { buffer = true, noremap = true, silent = true }
+        vim.keymap.set("n", "l", "<CR>", opts)
+        vim.keymap.set("n", "h", "-", opts)
+    end
+})
+
 vim.keymap.set(
     "n",
     "<leader>ee",
