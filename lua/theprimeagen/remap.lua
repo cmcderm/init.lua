@@ -46,8 +46,12 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Search and replace current token
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
 -- Set executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- Fix file indentation
+vim.keymap.set("n", "<leader>F", "mfgg=G`f")
 
 vim.api.nvim_create_autocmd("filetype", {
     pattern = "netrw",
@@ -84,9 +88,5 @@ vim.keymap.set(
 
 vim.keymap.set("n", "<leader>ca", function()
     require("cellular-automaton").start_animation("make_it_rain")
-end)
-
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
 end)
 

@@ -1,12 +1,12 @@
 local root_files = {
-  '.luarc.json',
-  '.luarc.jsonc',
-  '.luacheckrc',
-  '.stylua.toml',
-  'stylua.toml',
-  'selene.toml',
-  'selene.yml',
-  '.git',
+    '.luarc.json',
+    '.luarc.jsonc',
+    '.luacheckrc',
+    '.stylua.toml',
+    'stylua.toml',
+    'selene.toml',
+    'selene.yml',
+    '.git',
 }
 
 return {
@@ -44,10 +44,11 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
-                "tsserver",
-                "gopls",
+                "angular-language-server",
+                "some-sass-language-server",
+                "eslint_d",
                 "clangd",
-                "omnisharp"
+                "jdtls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -55,7 +56,6 @@ return {
                         capabilities = capabilities
                     }
                 end,
-
                 zls = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.zls.setup({
@@ -113,8 +113,8 @@ return {
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
-                { name = 'buffer' },
-            })
+                    { name = 'buffer' },
+                })
         })
 
         vim.diagnostic.config({
