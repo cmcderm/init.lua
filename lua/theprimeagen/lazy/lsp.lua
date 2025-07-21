@@ -44,8 +44,6 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
-                "angular-language-server",
-                "some-sass-language-server",
                 "clangd",
                 "jdtls",
             },
