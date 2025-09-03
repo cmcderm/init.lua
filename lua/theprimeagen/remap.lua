@@ -64,6 +64,12 @@ vim.api.nvim_create_autocmd("filetype", {
     end
 })
 
+-- Resize Current Split
+vim.keymap.set("n", "<leader>k", "20<C-w>+")
+vim.keymap.set("n", "<leader>j", "20<C-w>-")
+vim.keymap.set("n", "<leader>h", "20<C-w><")
+vim.keymap.set("n", "<leader>l", "20<C-w>>")
+
 vim.keymap.set(
     "n",
     "<leader>ee",
